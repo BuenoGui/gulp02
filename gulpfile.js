@@ -28,6 +28,6 @@ function GulpImg() {
 
 exports.default = function() {
     gulp.watch('./src/css/*.scss', {ignoreInitial: false}, gulp.series(GulpSass));
-    gulp.watch('./build/js', {ignoreInitial: false}, gulp.series(GulpJs));
+    gulp.watch('./src/js', {ignoreInitial: false}, gulp.series(GulpJs));
     gulp.watch('./src/imagens/*', {ignoreInitial: false}, gulp.series(GulpImg));
 };
